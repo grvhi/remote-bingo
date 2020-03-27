@@ -27,7 +27,7 @@ def generate_grid():
         for k in RANGES.keys()
     }
     columnar['n'].insert(2, 'FREE')
-    columnar['n'].pop()
+    columnar['n'].pop(3)
     rows = [
         [
             (list(columnar.keys())[col_i], val[i])
